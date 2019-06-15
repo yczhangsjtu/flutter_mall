@@ -10,16 +10,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_swiper: ^1.1.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  image_test_utils: ^1.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
+  assets:
+    - assets/placeholder-image.png
 
   # To add assets to your package, add an assets section, like this:
   # assets:
