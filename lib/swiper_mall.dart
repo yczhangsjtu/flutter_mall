@@ -7,10 +7,10 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 const double kDefaultSwiperHeight = 333;
 
 class SwiperMallItem {
-  String image;
+  String imageUrl;
   VoidCallback action;
 
-  SwiperMallItem({this.image, this.action});
+  SwiperMallItem({this.imageUrl, this.action});
 }
 
 class SwiperMall extends StatelessWidget {
@@ -46,7 +46,7 @@ class SwiperMall extends StatelessWidget {
               height: this.height,
               fit: BoxFit.cover,
               placeholder: AssetImage("assets/placeholder-image.png"),
-              image: NetworkImage(itemList[index].image)),
+              image: NetworkImage(itemList[index].imageUrl)),
         );
       },
     );
